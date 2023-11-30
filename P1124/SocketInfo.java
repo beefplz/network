@@ -11,6 +11,7 @@ public class SocketInfo {
             Socket theSocket = new Socket(host, 80);
             System.out.println("Connected to " + theSocket.getInetAddress() + " on port " + theSocket.getPort() + 
             " from port "+ theSocket.getLocalPort() + " of "+ theSocket.getLocalAddress());
+            theSocket.close();
         } catch (UnknownHostException ex) {
             System.err.println("I can't find " + host);
         } catch (SocketException ex) {
