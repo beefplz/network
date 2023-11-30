@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
-import java.net.InetAddress;
+//import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.net.SocketAddress;
@@ -17,7 +17,7 @@ public class Whois {
 
     public static void main(String[] args) throws IOException {
         int port = DEFAULT_PORT;
-        InetAddress host = InetAddress.getByName(DEFAULT_HOST);
+        //InetAddress host = InetAddress.getByName(DEFAULT_HOST);
         Socket socket = new Socket();
         try {
             SocketAddress address = new InetSocketAddress(DEFAULT_HOST, port);
