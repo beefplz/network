@@ -11,6 +11,7 @@ public class URLSplitter {
             System.out.println("The scheme is " + u.getProtocol());
             System.out.println("The user info is " + u.getUserInfo());
             String host = u.getHost();
+            System.out.println("The host is " + host);
             if (host != null) {
                 int atSign = host.indexOf('@');
                 if (atSign != -1) host = host.substring(atSign+1);
